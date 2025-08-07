@@ -29,3 +29,29 @@
   <script src="script.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prince Hotel - Food Order</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Order Your Food</h1>
+
+  <section class="food-order">
+    <div id="menu"></div>
+    <button onclick="placeOrder()">Place Order</button>
+    <h3 id="orderTotal"></h3>
+
+    <div id="qrSection" style="display: none;">
+      <h3>Scan & Pay</h3>
+      <img src="images/upi-qr.png" alt="UPI QR Code" class="qr-img" />
+      <p id="payAmount"></p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
