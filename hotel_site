@@ -1,0 +1,9 @@
+hotel-site/
+├── index.html       ← Main page
+├── style.css        ← Your custom styling
+├── script.js        ← All your JavaScript logic
+├── /images/         ← Folder to store room/food icons or images
+│   └── room.jpg, food1.jpg, etc.
+├── /menu/           ← Optional: if you want to store food menu in JSON
+│   └── menu.json
+└── README.md        ← Optional: Info about your project
