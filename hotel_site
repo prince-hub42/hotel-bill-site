@@ -7,3 +7,9 @@ hotel-site/
 ├── /menu/           ← Optional: if you want to store food menu in JSON
 │   └── menu.json
 └── README.md        ← Optional: Info about your project
+food-order-site/
+├── index.html
+├── style.css
+├── script.js
+└── /images/
+    └── upi-qr.png
