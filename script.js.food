@@ -1,0 +1,30 @@
+// Sample food menu data
+const menuItems = [
+  { name: "Paneer Tikka", price: 150 },
+  { name: "Veg Biryani", price: 120 },
+  { name: "Butter Naan", price: 30 },
+  { name: "Masala Dosa", price: 80 }
+];
+
+// Load the menu when the page loads
+window.onload = function () {
+  const menuDiv = document.getElementById("menu");
+  menuItems.forEach((item, index) => {
+    menuDiv.innerHTML += `
+      <div>
+        <label>${item.name} - ₹${item.price}</label>
+        <input type="number" id="food${index}" placeholder="Qty" min="0" value="0" />
+      </div>
+    `;
+  });
+};
+
+// Calculate total when "Place Order" is clicked
+function placeOrder() {
+  let total = 0;
+  menuItems.forEach((item, index) => {
+    const qty = parseInt(document.getElementById(`food${index}`).value) || 0;
+    total += item.price * qty;
+  });
+  document.getElementById("orderTotal").innerText = "Total Bill: ₹" + total;
+}
