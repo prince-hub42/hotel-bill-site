@@ -9,3 +9,8 @@ h1 {
 label, select, input {
   margin-top: 10px;
 }
+.qr-img {
+  display: block;
+  max-width: 200px;
+  margin: 20px auto;
+}
