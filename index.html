@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotel Bill Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to Prince Hotel</h1>
+
+  <h2>Book a Room</h2>
+  <label>Room Type:
+    <select id="roomType">
+      <option value="single">Single - ₹1000</option>
+      <option value="double">Double - ₹1800</option>
+      <option value="deluxe">Deluxe - ₹2500</option>
+    </select>
+  </label>
+  <br>
+  <label>Number of Nights:
+    <input type="number" id="nights" value="1" />
+  </label>
+  <br><br>
+  <button onclick="calculateBill()">Generate Bill</button>
+
+  <h3 id="result"></h3>
+
+  <script src="script.js"></script>
+</body>
+</html>
